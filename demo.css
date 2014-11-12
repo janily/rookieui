@@ -1,0 +1,182 @@
+/* 图文混排 */
+      .img-txt {width:890px;margin:0 auto;}
+         ul {list-style:none;}
+         body {font-family:arial;}
+         	.img-txt:before,
+			.img-txt:after {
+			  content: ".";
+			  display: block;
+			  height: 0;
+			  visibility: hidden;
+			}
+			.img-txt:after {clear: both;}
+			.img-txt {zoom: 1;} 
+			.img {
+			    float:left;
+			    margin-right:10px;
+			    _margin-right:7px;
+			} 
+			.txt {
+			    display:table-cell;
+			    #zoom:1;
+			}
+			.txt:after {
+			    clear: both;
+			    display: block;
+			    visibility: hidden;
+			    overflow: hidden;
+			    height: 0 !important;
+			    line-height: 0;
+			    font-size: xx-large;
+			    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+			}
+
+/*负边距样式*/
+    li {list-style:none;}
+	.cross {
+			overflow:hidden;
+			zoom:1;
+		}
+
+		.cross li 
+		{
+			float: left;
+			padding:0 11px 0 10px;
+			border-left:1px solid #aaa;
+			margin-left:-1px;
+		}
+
+
+		.vertical
+		{
+			overflow:hidden;
+			position:relative;
+			zoom:1;
+		}
+		.vertical li
+		{
+			border-bottom:1px dashed #cee1ee;
+			height:25px;
+			line-height:25px;
+			padding:5px 0;
+			position: relative;
+			margin-bottom:-1px;
+			/*background-color: #ff0000;*/
+		}
+
+
+/*分隔线的样式*/
+
+.line{
+margin-top:100px;
+height: 1px;
+border-top: 1px solid #ddd;
+text-align: center;
+	}
+.line span{
+ position: relative;
+top: -8px;
+background: #fff;
+padding: 0 20px;
+}
+
+/* 选项卡样式 */
+			.ui-tabs
+			{
+				margin:50px 0;
+			}
+         	.ui-tabs-nav
+			{
+			    /*导航容器定义*/
+			    border-bottom:1px solid #66CC66;
+				height:21px;
+				_overflow:hidden;
+				margin: 0;
+				padding: 0;
+
+			}
+			.ui-tabs-nav li:first-child{
+				margin-right:10px;
+			}
+			.ui-tabs-nav li
+			{
+			    /*默认标签样式*/
+			    float: left;
+			    list-style:none;
+			 	display:inline;
+			}
+			.ui-tabs-nav li 
+			{
+					background-color:#CCFFCC;
+					border:1px solid #66CC66;
+					color:#666;
+					display:block;
+					padding:0 5px;
+					line-height:20px;
+					float:left;
+					font-weight:bold;
+					cursor: pointer;
+			}
+			.ui-tabs-nav li.ui-tabs-selected
+			{
+			    /*激活的标签样式*/
+			    background-color:#fff;
+				border-bottom:1px solid #fff;
+				_position:relative;
+				margin-bottom:-1px;
+			}
+			.ui-tabs-panel
+			{
+			    /*默认的显示区域样式*/
+			    border-right:1px solid #66CC66;
+			    border-left:1px solid #66CC66;
+			    border-bottom:1px solid #66CC66;
+			}
+			.ui-tabs-panel p {
+				margin: 0;
+				padding: 0;
+			}
+			.ui-tabs-hide
+			{
+			    display: none;
+			}
+
+/*分页样式*/
+
+.pager {position:relative;float:right;right:50%;font:normal 12px/1.5em simsun, Verdana,Lucida, Arial, Helvetica, sans-serif;}
+.pager .page {position:relative;float:right;right:-50%;}
+.pager a {float:left;height:20px;overflow:hidden;margin:0 2px;padding:0 5px;line-height:20px;text-decoration:none;color:#000000;border:1px solid #CBCBCB;background-color:#E5E5E5;border-radius:2px;}
+.pager a.current,
+.pager a.current:hover,
+.pager a:hover {color:#EFEFEF;border:1px solid #000000;background-color:#242424;box-shadow:0 0 3px #000000;}
+.pager a.dis_page,
+.pager a.dis_page:hover {color:#CBCBCB;border:1px solid #CBCBCB;background-color:#E5E5E5;cursor:not-allowed;box-shadow:none;}
+.pager span {float:left;height:22px;overflow:hidden;margin:0 2px;line-height:28px;color:#242424;}
+
+
+/*新闻列表*/
+#newslist_demo{width:340px;padding:10px;}
+#newslist_demo li{text-align:right;color:#ccc;}
+#newslist_demo li a{float:left;width:270px;text-align:left;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+
+
+/*边框三角形*/
+
+.arrow-up {width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 5px solid black;}
+.arrow-down { width: 0;height: 0;border-left: 20px solid transparent; border-right: 20px solid transparent;border-top: 20px solid #f00;}
+.arrow-left {width: 0;height: 0;border-top: 10px solid transparent;border-bottom: 10px solid transparent; border-right:10px solid blue;}
+.arrow-right {width: 0; height: 0; border-top: 30px solid transparent;border-bottom: 30px solid transparent; border-left: 30px solid green;}
+
+
+/*省略号样式*/
+  #demo1 li{-o-text-overflow: ellipsis;text-overflow: ellipsis; overflow: hidden;white-space: nowrap;width:250px;margin-left:12px;list-style:disc inside none;}
+
+
+/*幻灯片样式*/
+
+.demo{ width:640px; height:200px; position:relative; overflow:hidden; border:#ddd 1px solid;padding:5px;}
+.num{ position:absolute;right:10px; top:10px; z-index:10;}
+.num a{ width:16px; height:16px; display:inline-block; text-align:center; margin:0 3px; cursor:pointer;}
+.num a.cur{ background:#ff6700;color:#fff;}
+.demo ul{ position:relative; z-index:5;}
+.demo ul li{ position:absolute; display:none;}
